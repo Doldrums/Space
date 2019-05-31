@@ -2,12 +2,54 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical"
+              android:background="@android:color/white"
               android:layout_height="match_parent">
 
-    <ImageView android:layout_width="wrap_content"
-               app:srcCompat="@drawable/time"
-               android:contentDescription="dfghj"
-               android:adjustViewBounds="true"
-               android:layout_height="wrap_content"/>
 
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="250dp"
+                   android:layout_gravity="end"
+                   android:layout_marginTop="60dp"
+                   android:src="@drawable/vr"
+                   android:adjustViewBounds="true"
+                   android:layout_height="wrap_content"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_height="match_parent">
+
+    <TextView android:layout_width="wrap_content"
+              style="@style/TextAppearance.AppCompat.Title"
+              android:textColor="@color/colorAccent"
+              android:text="Current changes"
+              android:layout_marginTop="20dp"
+              android:layout_gravity="end"
+              android:layout_marginEnd="20dp"
+              android:textAllCaps="true"
+              android:layout_height="wrap_content"/>
+    <TextView android:layout_width="wrap_content"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:text="01 Jun, 2019"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_height="wrap_content"/>
+    <TextView android:layout_width="wrap_content"
+              style="@style/TextAppearance.AppCompat.Title"
+              android:text="Friday"
+              android:layout_marginStart="20dp"
+              android:layout_height="wrap_content"/>
+    </LinearLayout>
+        <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/card"
+                app:borderWidth="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_info_outline_black_24dp"
+        />
+
+    </FrameLayout>
 </LinearLayout>
