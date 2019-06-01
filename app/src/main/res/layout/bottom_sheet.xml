@@ -22,17 +22,6 @@
                                         app:cardCornerRadius="50dp"
                                         app:cardBackgroundColor="#38216B"
                                         android:layout_height="match_parent">
-                <LinearLayout android:layout_width="match_parent"
-                              android:layout_margin="10dp"
-                              android:orientation="vertical"
-                              android:layout_height="match_parent">
-                    <ImageView android:layout_width="100dp"
-                               android:layout_marginTop="20dp"
-                               android:layout_gravity="center_horizontal"
-                               android:src="@color/card_white"
-                               android:layout_height="2dp"/>
-
-                </LinearLayout>
     </android.support.v7.widget.CardView>
         </LinearLayout>
         <ImageView android:layout_width="match_parent"
@@ -50,6 +39,78 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/planet"
         />
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_margin="10dp"
+                      android:orientation="vertical"
+                      android:layout_height="match_parent">
+            <ImageView android:layout_width="100dp"
+                       android:layout_marginTop="20dp"
+                       android:layout_gravity="center_horizontal"
+                       android:src="@color/card_white"
+                       android:layout_height="2dp"/>
+            <TextView android:layout_width="wrap_content"
+                      style="@style/TextAppearance.AppCompat.Body1"
+                      android:layout_margin="10dp"
+                      android:textAlignment="center"
+                      android:textColor="#d8fff4"
+                      android:id="@+id/txt_desc"
+                      android:visibility="invisible"
+                      android:text="Do you want to know how long your life can be extended if your new home becomes the planet Miller near the black hole Gargantua?"
+                      android:layout_height="wrap_content"/>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:id="@+id/ln_info"
+                          android:visibility="invisible"
+                          android:layout_height="wrap_content">
+                <ImageView android:layout_width="180dp"
+                           android:adjustViewBounds="true"
+                           android:src="@drawable/formula"
+                           android:layout_height="wrap_content"/>
+                <TextView android:layout_width="wrap_content"
+                          android:text="hole mass"
+                          android:layout_marginEnd="5dp"
+                          android:layout_marginTop="50dp"
+                          android:textAlignment="center"
+                          style="@style/TextAppearance.AppCompat.Body1"
+                          android:textColor="#d8fff4"
+                          android:layout_height="wrap_content"/>
+                <android.support.v7.widget.CardView
+                        android:layout_width="100dp"
+                        android:layout_marginTop="10dp"
+                        app:cardBackgroundColor="@color/card"
+                        app:cardCornerRadius="10dp"
+                        android:src="@drawable/ic_whatshot_black_24dp"
+                        android:layout_height="60dp">
+                    <TextView android:layout_width="wrap_content"
+                              android:text="=234.5F"
+                              android:id="@+id/txt_time"
+                              android:textColor="@android:color/white"
+                              android:layout_gravity="center"
+                              style="@style/TextAppearance.AppCompat.Title"
+                              android:layout_height="wrap_content"/>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="50dp"
+                          android:text="time dilation"
+                          android:textAlignment="center"
+                          style="@style/TextAppearance.AppCompat.Body1"
+                          android:textColor="#d8fff4"
+                          android:layout_height="wrap_content"/>
+                <TextView android:layout_width="100dp"
+                          android:text="distance from the hole to the planet"
+                          android:textAlignment="center"
+                          style="@style/TextAppearance.AppCompat.Body1"
+                          android:textColor="#d8fff4"
+                          android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
         <ImageView android:layout_width="match_parent"
                    android:src="@drawable/blackhole"
                    android:adjustViewBounds="true"

@@ -3,6 +3,7 @@ package com.example.spaceapp
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.BottomSheetBehavior
+import android.util.Log
 import android.view.View
 import android.widget.LinearLayout
 import kotlinx.android.synthetic.main.activity_time.*
@@ -38,8 +39,14 @@ class TimeActivity : AppCompatActivity() {
                 // и отображает после того как нижний экран полностью свернется
                 if (BottomSheetBehavior.STATE_DRAGGING == newState) {
                     linerallayout.animate().scaleX(0F).scaleY(0F).setDuration(300).start()
+                    txt_desc.visibility = View.VISIBLE
+                    ln_info.visibility =View.VISIBLE
                 } else if (BottomSheetBehavior.STATE_COLLAPSED == newState) {
                     linerallayout.animate().scaleX(1F).scaleY(1F).setDuration(300).start()
+                    txt_desc.visibility = View.INVISIBLE
+                    ln_info.visibility =View.INVISIBLE
+                    img_planet.x = 250.0F
+                    img_planet.y = 500.0F
                 }
             }
 
@@ -51,9 +58,12 @@ class TimeActivity : AppCompatActivity() {
         img_planet.setOnTouchListener(View.OnTouchListener { view, event ->
             when (event.action) {
 
+
                 MotionEvent.ACTION_DOWN -> {
                     dX = view.x - event.rawX
                     dY = view.y - event.rawY
+                    Log.e("KEK_TAG",view.y.toString())
+                  //  txt_time.text = view.y+
                 }
 
                 MotionEvent.ACTION_MOVE -> view.animate()
@@ -64,6 +74,8 @@ class TimeActivity : AppCompatActivity() {
                 MotionEvent.ACTION_UP -> {
                 }
                 else -> return@OnTouchListener false
+
+
             }
             true
         })
