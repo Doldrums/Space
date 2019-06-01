@@ -98,7 +98,7 @@
     <string name="welcome">Добро пожаловать в КосмоВремя</string>
     <string name="txt_changes">Текущие изменения</string>
     <string name="txt_date">01 Июня, 2019</string>
-    <string name="txt_date_date">Пятница</string>
+    <string name="txt_date_date">ваши значения</string>
     <string name="txt_up">А также можно использовать свои данные для сравнения изменений</string>
     <string name="txt_up_btn">Поехали</string>
     <string name="txt_desc_miller">Хотите узнать насколько может удлиниться ваша жизнь если вашим новым домом станет планета Миллер вблизи чёрной дыры Гаргантюа?</string>

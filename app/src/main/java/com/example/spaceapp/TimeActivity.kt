@@ -11,6 +11,7 @@ import kotlinx.android.synthetic.main.activity_time.*
 import android.view.MotionEvent
 import kotlinx.android.synthetic.main.bottom_sheet.*
 import kotlinx.android.synthetic.main.content_time.*
+import java.util.*
 
 
 class TimeActivity : AppCompatActivity() {
@@ -26,6 +27,9 @@ class TimeActivity : AppCompatActivity() {
 
         var dX  = 100.0F
         var dY = 600.0F
+
+        val currentTime = Calendar.getInstance().time
+        txt_date.text= currentTime.toString()
 
 
         val actionBar = supportActionBar

@@ -100,7 +100,7 @@
     <string name="welcome">Welcome to SpaceTime</string>
     <string name="txt_changes">Current Changes</string>
     <string name="txt_date">01 Jun, 2019</string>
-    <string name="txt_date_date">Friday</string>
+    <string name="txt_date_date">your values</string>
     <string name="txt_up">You can also calculate your own parameters to search for changes</string>
     <string name="txt_up_btn">Try It!</string>
     <string name="txt_desc_miller">Do you want to know how long your life can be extended if your new home becomes the planet Miller near the black hole Gargantua?</string>
