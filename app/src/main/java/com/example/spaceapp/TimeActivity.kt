@@ -5,12 +5,9 @@ import android.os.Bundle
 import android.support.design.widget.BottomSheetBehavior
 import android.view.View
 import android.widget.LinearLayout
-import android.support.annotation.NonNull
-import android.support.v4.view.ViewCompat.animate
-import android.R.attr.scaleX
-import android.R.attr.scaleY
-import android.R.attr.start
 import kotlinx.android.synthetic.main.activity_time.*
+import android.view.MotionEvent
+import kotlinx.android.synthetic.main.bottom_sheet.*
 
 
 class TimeActivity : AppCompatActivity() {
@@ -18,6 +15,10 @@ class TimeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_time)
+
+        var dX  = 100.0F
+        var dY = 400.0F
+
 
         val actionBar = supportActionBar
         actionBar!!.hide()
@@ -43,6 +44,28 @@ class TimeActivity : AppCompatActivity() {
             }
 
             override fun onSlide(bottomSheet: View, slideOffset: Float) {}
+        })
+
+
+
+        img_planet.setOnTouchListener(View.OnTouchListener { view, event ->
+            when (event.action) {
+
+                MotionEvent.ACTION_DOWN -> {
+                    dX = view.x - event.rawX
+                    dY = view.y - event.rawY
+                }
+
+                MotionEvent.ACTION_MOVE -> view.animate()
+                    .x(event.rawX + dX)
+                    .y(event.rawY + dY)
+                    .setDuration(0)
+                    .start()
+                MotionEvent.ACTION_UP -> {
+                }
+                else -> return@OnTouchListener false
+            }
+            true
         })
 
     }
