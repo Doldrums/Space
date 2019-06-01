@@ -1,9 +1,7 @@
 <resources>
-    <string name="app_name">SpaceTime</string>
-    <string name="description">The application allows you to determine the magnitude of the effect of gravitational time
-        dilation in the field of massive objects. Do you want to know?
-    </string>
-    <string name="title_activity_info">InfoActivity</string>
+    <string name="app_name">КосмоВремя</string>
+    <string name="description">Приложение позволяет определить величину эффекта гравитационного замедления времени в поле массивных объектов. Хотите узнать подробнее?</string>
+    <string name="title_activity_info">Информация</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
@@ -93,19 +91,19 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
-    <string name="txt_nickname">Your nickname</string>
-    <string name="txt_password">Password</string>
-    <string name="start">Let\'s Discover This</string>
-    <string name="start_anon">Or stay anonymous and continue</string>
-    <string name="welcome">Welcome to SpaceTime</string>
-    <string name="txt_changes">Current Changes</string>
-    <string name="txt_date">01 Jun, 2019</string>
-    <string name="txt_date_date">Friday</string>
-    <string name="txt_up">You can also calculate your own parameters to search for changes</string>
-    <string name="txt_up_btn">Try It!</string>
-    <string name="txt_desc_miller">Do you want to know how long your life can be extended if your new home becomes the planet Miller near the black hole Gargantua?</string>
-    <string name="txt_desc_time">time dilation</string>
-    <string name="txt_desc_distance">distance from the hole to the planet</string>
-    <string name="txt_desc_mass">hole mass</string>
-    <string name="txt_desc_value">value</string>
+    <string name="txt_nickname">Имя пользователя</string>
+    <string name="txt_password">Пароль</string>
+    <string name="start">войти и начать изучение</string>
+    <string name="start_anon">Или остаться анонимным и продолжить</string>
+    <string name="welcome">Добро пожаловать в КосмоВремя</string>
+    <string name="txt_changes">Текущие изменения</string>
+    <string name="txt_date">01 Июня, 2019</string>
+    <string name="txt_date_date">Пятница</string>
+    <string name="txt_up">А также можно использовать свои данные для сравнения изменений</string>
+    <string name="txt_up_btn">Поехали</string>
+    <string name="txt_desc_miller">Хотите узнать насколько может удлиниться ваша жизнь если вашим новым домом станет планета Миллер вблизи чёрной дыры Гаргантюа?</string>
+    <string name="txt_desc_time">изменение времени</string>
+    <string name="txt_desc_distance">расстояние от черной дыры до планеты</string>
+    <string name="txt_desc_mass">масса дыры</string>
+    <string name="txt_desc_value">значение</string>
 </resources>

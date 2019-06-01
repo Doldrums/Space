@@ -16,7 +16,7 @@
                   android:orientation="vertical"
                   android:layout_height="wrap_content">
         <TextView android:layout_width="wrap_content"
-                  android:text="Welcome to SpaceTime"
+                  android:text="@string/welcome"
                   android:textSize="10pt"
                   android:gravity="center_horizontal"
                   style="@style/TextAppearance.AppCompat.Title"
@@ -43,7 +43,7 @@
                     android:id="@+id/txt_name"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="Your nickname"
+                    android:hint="@string/txt_nickname"
                     android:inputType="textPassword"
                     tools:ignore="Autofill"/>
 
@@ -59,7 +59,7 @@
                     android:id="@+id/txt_password"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="Password"
+                    android:hint="@string/txt_password"
                     android:inputType="textPassword"
                     tools:ignore="Autofill"/>
 
@@ -70,7 +70,7 @@
                 android:id="@+id/btn_discover"
                 android:layout_marginTop="10dp"
                 android:layout_gravity="center_horizontal"
-                android:text="let's discover this"
+                android:text="@string/start"
                 android:layout_height="wrap_content"/>
         <TextView android:layout_width="wrap_content"
                   android:layout_marginTop="5dp"
@@ -79,7 +79,7 @@
                   android:focusable="true"
                   android:textColorHint="@color/colorPrimary"
                   android:layout_gravity="center_horizontal"
-                  android:text="Or stay anonymous and continue"
+                  android:text="@string/start_anon"
                   android:layout_height="wrap_content"/>
     </LinearLayout>
 
