@@ -39,29 +39,102 @@
         android:layout_marginTop="30dp"
         android:layout_marginStart="20dp"
         android:layout_height="wrap_content"/>
-        <TextView android:layout_width="180dp"
+        <TextView android:layout_width="160dp"
                   style="@style/TextAppearance.AppCompat.Body1"
-                  android:text="Выберите данные для анализа и вычисления изменений"
+                  android:text="Введите данные\nдля анализа и подсчета изменений времени относительно черной дыры"
                   android:layout_marginStart="10dp"
                   android:layout_marginTop="20dp"
                   android:layout_height="wrap_content"/>
-        <SeekBar
-                android:layout_marginTop="20dp"
-                style="@style/Widget.AppCompat.SeekBar.Discrete"
-                android:layout_width="200dp"
+        <android.support.v7.widget.CardView android:layout_width="180dp"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_height="wrap_content">
+            <TextView android:layout_width="match_parent"
+                      android:textAlignment="center"
+                      android:textColor="@color/colorPrimaryDark"
+                      style="@style/TextAppearance.AppCompat.Body2"
+                      android:text="=2124.32"
+                      android:id="@+id/txt_result"
+                      android:textSize="16pt"
+                      android:layout_height="match_parent"/>
+        </android.support.v7.widget.CardView>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_marginTop="30dp"
+                      android:orientation="horizontal"
+                      android:layout_height="wrap_content">
+            <TextView android:layout_width="15dp"
+                      android:text="r"
+                      android:layout_marginStart="20dp"
+                      android:layout_marginEnd="10dp"
+                      android:layout_gravity="center_vertical"
+                      android:textAllCaps="true"
+                      style="@style/TextAppearance.AppCompat.Title"
+                      android:layout_height="wrap_content"/>
+        <com.jaygoo.widget.RangeSeekBar
+                android:layout_width="260dp"
                 android:layout_height="wrap_content"
-                android:max="10"
-                android:progress="3"
-                android:labelFor="@id/seekBar"
-                android:id="@+id/seekBar"/>
-        <SeekBar
-                android:layout_marginTop="10dp"
-                style="@style/Widget.AppCompat.SeekBar.Discrete"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:max="6"
-                android:progress="3"
-                android:id="@+id/seekBar2"/>
+                app:rsb_mode="single"
+                android:id="@+id/seek_result_r"
+                app:rsb_progress_color="@color/colorPrimary"
+                app:rsb_min="0"
+                app:rsb_max="99"
+                android:layout_gravity="center_vertical"
+        />
+            <TextView android:layout_width="30dp"
+                      android:text="20"
+                      android:id="@+id/txt_result_r"
+                      android:layout_marginStart="10dp"
+                      android:layout_marginEnd="20dp"
+                      android:layout_gravity="center_vertical"
+                      android:textAllCaps="true"
+                      style="@style/TextAppearance.AppCompat.Title"
+                      android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView android:layout_width="match_parent"
+                  android:textAlignment="center"
+                  android:layout_marginStart="20dp"
+                  android:layout_marginEnd="20dp"
+                  android:text="расстояние R в данном случае измеряется в количестве горизонтов событий между двумя массивными объектами"
+                  android:layout_height="wrap_content"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_marginTop="10dp"
+                      android:orientation="horizontal"
+                      android:layout_height="wrap_content">
+            <TextView android:layout_width="15dp"
+                      android:text="m"
+                      android:layout_marginStart="20dp"
+                      android:layout_marginEnd="10dp"
+                      android:layout_gravity="center_vertical"
+                      android:textAllCaps="true"
+                      style="@style/TextAppearance.AppCompat.Title"
+                      android:layout_height="wrap_content"/>
+            <com.jaygoo.widget.RangeSeekBar
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    app:rsb_mode="single"
+                    android:id="@+id/seek_result_m"
+                    app:rsb_progress_color="@color/colorPrimary"
+                    app:rsb_min="0"
+                    app:rsb_max="99"
+                    android:layout_gravity="center_vertical"
+            />
+            <TextView android:layout_width="30dp"
+                      android:text="54"
+                      android:id="@+id/txt_result_m"
+                      android:layout_marginStart="10dp"
+                      android:layout_marginEnd="20dp"
+                      android:layout_gravity="center_vertical"
+                      android:textAllCaps="true"
+                      style="@style/TextAppearance.AppCompat.Title"
+                      android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView android:layout_width="match_parent"
+                  android:textAlignment="center"
+                  android:layout_marginStart="20dp"
+                  android:layout_marginEnd="20dp"
+                  android:text="масса объекта M в отношеении 1 целая равна 10 миллионов Солнц относительно которого нужно узнать величину"
+                  android:layout_height="wrap_content"/>
+
     </LinearLayout>
         <android.support.design.widget.FloatingActionButton
                 android:layout_width="wrap_content"
