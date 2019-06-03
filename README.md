@@ -23,7 +23,7 @@ Our app is an addition to our research project on mathematical modeling “The L
 
 ### Screenshots are presented below:
 <p>
-<img src="https://github.com/Doldrums/Space/blob/master/IoMxv_aSL48.jpg" width="200" height="350" />
+<img src="https://github.com/Doldrums/Space/blob/master/2Bxj1-UFUfA.jpg" width="200" height="350" />
 <img src="https://github.com/Doldrums/Space/blob/master/ddbGiK-ZHzU.jpg" width="200" height="350" />
 <img src="https://github.com/Doldrums/Space/blob/master/78BZQRocikI.jpg" width="200" height="350" />
 <img src="https://github.com/Doldrums/Space/blob/master/uU0I1654ec4.jpg" width="200" height="350" />
