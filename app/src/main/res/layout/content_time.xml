@@ -47,14 +47,14 @@
                   android:layout_height="wrap_content"/>
         <android.support.v7.widget.CardView android:layout_width="180dp"
                                             android:layout_marginTop="10dp"
-                                            android:layout_height="wrap_content">
+                                            android:layout_height="40dp">
             <TextView android:layout_width="match_parent"
                       android:textAlignment="center"
                       android:textColor="@color/colorPrimaryDark"
                       style="@style/TextAppearance.AppCompat.Body2"
                       android:text="=2124.32"
                       android:id="@+id/txt_result"
-                      android:textSize="16pt"
+                      android:textSize="15pt"
                       android:layout_height="match_parent"/>
         </android.support.v7.widget.CardView>
         <LinearLayout android:layout_width="match_parent"
@@ -75,7 +75,7 @@
                 app:rsb_mode="single"
                 android:id="@+id/seek_result_r"
                 app:rsb_progress_color="@color/colorPrimary"
-                app:rsb_min="0"
+                app:rsb_min="1"
                 app:rsb_max="99"
                 android:layout_gravity="center_vertical"
         />
@@ -114,7 +114,7 @@
                     app:rsb_mode="single"
                     android:id="@+id/seek_result_m"
                     app:rsb_progress_color="@color/colorPrimary"
-                    app:rsb_min="0"
+                    app:rsb_min="1"
                     app:rsb_max="99"
                     android:layout_gravity="center_vertical"
             />
@@ -132,7 +132,7 @@
                   android:textAlignment="center"
                   android:layout_marginStart="20dp"
                   android:layout_marginEnd="20dp"
-                  android:text="масса объекта M в отношеении 1 целая равна 10 миллионов Солнц относительно которого нужно узнать величину"
+                  android:text="масса объекта M в отношеении 1 к 10 миллионов Солнц относительно которого нужно узнать величину"
                   android:layout_height="wrap_content"/>
 
     </LinearLayout>

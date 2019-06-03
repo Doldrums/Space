@@ -51,7 +51,9 @@ class TimeActivity : AppCompatActivity() {
 
             override fun onStopTrackingTouch(view: RangeSeekBar, isLeft: Boolean) {
                 txt_result_r.text = resultR.toInt().toString()
-                txt_result.text = String.format("%.5g%n", Math.sqrt(1-((2*G*resultM*sun)/resultR*r*c*c)))
+                Log.e("KEK_TAG", (resultR*18.41).toString())
+                Log.e("KEK_TAG", (13.34*resultM).toString())
+                txt_result.text =String.format("%.2g%n", (1-(13.34*resultM)/(resultR*18.41)))
             }
         })
 
@@ -69,7 +71,7 @@ class TimeActivity : AppCompatActivity() {
 
             override fun onStopTrackingTouch(view: RangeSeekBar, isLeft: Boolean) {
                 txt_result_m.text = resultM.toInt().toString()
-                txt_result.text = String.format("%.5g%n", Math.sqrt(1-((2*G*resultM*sun)/resultR*r*c*c)))
+                txt_result.text =String.format("%.2g%n", (1-(13.34*resultM)/(resultR*18.41)))
             }
         })
 

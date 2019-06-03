@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">КосмоВремя</string>
+    <string name="app_name">SpaceTime</string>
     <string name="description">Приложение позволяет определить величину эффекта гравитационного замедления времени в поле массивных объектов. Хотите узнать подробнее?</string>
     <string name="title_activity_info">Информация</string>
     <string name="title_info">Приложение “SpaceTime”</string>
@@ -15,7 +15,7 @@
     <string name="text_app_1">"Если желаете понять лучше – работы Эйнштейна по Общей Теории Относительности уже ждут вас!\n"
         "Именно об этом эффекте героиня Энн Хэтэуэй говорила персонажу Мэтью МакКонахи в «Интерстелларе» после спуска на далекую планету Миллер, вращающуюся вокруг чёрной дыры Гаргантюа : «Один час на этой планете равен семи земным годам»</string>
     <string name="start_anon">Или остаться анонимным и продолжить</string>
-    <string name="welcome">Добро пожаловать в КосмоВремя</string>
+    <string name="welcome">Добро пожаловать</string>
     <string name="txt_changes">Текущие изменения</string>
     <string name="txt_date">01 Июня, 2019</string>
     <string name="txt_date_date">ваши значения</string>
