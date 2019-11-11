@@ -1,4 +1,6 @@
 # SpaceTime App
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/619d11a3a6ad48a5b3cb3f7dd1731840)](https://www.codacy.com/manual/Doldrums/Space?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Doldrums/Space&amp;utm_campaign=Badge_Grade)
+
 This application - is a smart service that allows you to determine the magnitude of the effect of gravitational time dilation in the field of massive objects. Using the application, you will be able to visually experience the physical concept of relativity over the time of general relativity. 
 
 ## Tutorial
